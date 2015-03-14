@@ -1,0 +1,36 @@
+.edit-page {
+  position: relative;
+
+  .all-list-container {
+    position: absolute;
+    width: 300px; 
+    padding: $normal-padding;
+    background-color: $bg-color;
+  } 
+
+  .selected-list-container {
+    margin-left: 300px;
+    padding: $normal-padding;
+    min-height: 800px;
+    border-left: 1px solid #e0e0e0;
+
+    .select-btn {
+      display: block;
+      width: 88px;
+      margin: 0 auto 10px;
+    }
+
+    .selected-items-list {
+      width: 400px;
+      margin: 0 auto;
+
+      .selected-inner-container {
+        padding: $normal-padding+5px;
+      }
+    }
+  }
+
+  .all-color-schemes .testcolor .mui-icon:before {
+    color: #ff4081;
+  }
+}

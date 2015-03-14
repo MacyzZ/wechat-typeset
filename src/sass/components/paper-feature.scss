@@ -1,0 +1,53 @@
+.home-features {
+
+  * { 
+    @include ease-out;
+  }
+
+  .paper-feature-title {
+    font-size: 20px;
+    background-color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: $desktop-keyline-increment;
+  }
+
+  .paper-feature {
+    max-width: 300px;
+    margin: 0 auto $desktop-gutter auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .paper-feature-image {
+    margin-bottom: -6px;
+  }
+
+  @media ($device-medium) {
+
+    .feature-container {
+      @extend %clearfix;
+      max-width: 906px;
+    }
+
+    .paper-feature {
+      float: left;
+      width: 33%;
+      margin-right: 4px;
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-left: -2px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+  }
+}
+

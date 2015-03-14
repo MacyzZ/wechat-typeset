@@ -1,0 +1,35 @@
+//Header navbar
+
+.mui-app-canvas {
+
+  height: 100%;
+
+  .mui-app-bar {
+    background-color: $main-color;
+    
+    .logo {
+      float: left;
+      cursor: pointer;
+      font-size: 24px;
+      line-height: 64px;
+      margin-bottom: 8px;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .github-icon-button {
+      float: right;
+      margin-right: -16px;
+    }
+  }
+}
+
+//Footer
+
+.footer {
+  color: #777;
+  text-align: center;
+  border-top: 1px solid $border-color;
+  padding: 40px 0;
+}
+

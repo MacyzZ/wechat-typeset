@@ -1,0 +1,24 @@
+.home-page {
+
+  .home-page-hero {
+    padding-top: $desktop-gutter-more;
+    padding-bottom: $desktop-keyline-increment;
+    background-color: #6f5499;
+    @include bg-linear-gradient(#6f5499,#563d7c);
+    
+    .tagline {
+      margin: 32px auto;
+      text-align: center;
+      max-width: 575px;
+
+      h1 {
+        font-size: 40px;
+        color: white;
+      }
+
+      p {
+        color: $light-text-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.selected-item-container {
+  position: relative;
+  border: 1px dashed $border-color;
+  
+  .selected-item-parent-container {
+    padding: 10px;
+    //text-align: center;
+  }
+
+  .del-btn, .drag-btn {
+    position: absolute;
+    top: 0;
+    @include ease-out; 
+  }
+  .del-btn {
+    //left: -25px;
+    right: -25px;
+    cursor: pointer;
+  }
+
+  .drag-btn {
+    right: -25px;
+    cursor: move;
+    display: none;
+  }
+}

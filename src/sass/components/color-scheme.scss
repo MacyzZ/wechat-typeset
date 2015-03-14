@@ -1,0 +1,21 @@
+.all-color-schemes, .specific-color-schemes {
+  width: 240px;
+}
+
+.all-color-schemes {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.specific-color-schemes {
+  position: absolute;
+  width: 260px;
+  left: 100px;
+  top: 66px;
+  background-color: $light-grey-bg-color;
+
+  button .mui-paper-container {
+    padding: 10px;
+  }
+}
+
