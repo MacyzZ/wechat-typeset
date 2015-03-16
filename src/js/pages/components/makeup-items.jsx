@@ -158,7 +158,6 @@ var HeadingItem1 = React.createClass({
     },
     props = {
       onClick: this._onClick,
-      contentEditable: this.props.isEdit,
       "data-name": "HI1",
       "data-title": this.props.options.title,
       "data-id": this.props.id
@@ -167,7 +166,7 @@ var HeadingItem1 = React.createClass({
     
     return (
       <h2 {...props}>
-        <span style={style}>
+        <span style={style} contentEditable={this.props.isEdit}>
           {this.props.options.title}
         </span>
       </h2>
@@ -196,7 +195,6 @@ var HeadingItem2 = React.createClass({
     },
     props = {
       onClick: this._onClick,
-      contentEditable: this.props.isEdit,
       "data-name": "HI2",
       "data-title": this.props.options.title,
       "data-id": this.props.id,
@@ -252,7 +250,7 @@ var HI2Sequence = React.createClass({
     }
     
     return (
-      <span onClick={this.props.isEdit?this._onClick:null} style={style}>
+      <span onClick={this.props.isEdit?this._onClick:null} style={style} contentEditable="true">
         <span style={innerStyle}>
           <section>1</section>
         </span>
@@ -281,7 +279,7 @@ var HI2Title = React.createClass({
     }
     
     return (
-      <span onClick={this.props.isEdit?this._onClick:null} style={style}>
+      <span onClick={this.props.isEdit?this._onClick:null} style={style} contentEditable="true">
         {this.props.options.title}
       </span>
     )
@@ -538,6 +536,14 @@ module.exports = {
   HI2: HeadingItem2, 
   S1: SectionItem, 
   BH1: BhItem1,
+  BP1: BpItem1,
+  C1: CardItem1
+};
+
+
+
+
+
   BP1: BpItem1,
   C1: CardItem1
 };
