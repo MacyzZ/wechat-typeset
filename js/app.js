@@ -764,7 +764,6 @@ var HeadingItem1 = React.createClass({displayName: 'HeadingItem1',
     },
     props = {
       onClick: this._onClick,
-      contentEditable: this.props.isEdit,
       "data-name": "HI1",
       "data-title": this.props.options.title,
       "data-id": this.props.id
@@ -773,7 +772,7 @@ var HeadingItem1 = React.createClass({displayName: 'HeadingItem1',
     
     return (
       React.createElement("h2", React.__spread({},  props), 
-        React.createElement("span", {style: style}, 
+        React.createElement("span", {style: style, contentEditable: this.props.isEdit}, 
           this.props.options.title
         )
       )
@@ -802,7 +801,6 @@ var HeadingItem2 = React.createClass({displayName: 'HeadingItem2',
     },
     props = {
       onClick: this._onClick,
-      contentEditable: this.props.isEdit,
       "data-name": "HI2",
       "data-title": this.props.options.title,
       "data-id": this.props.id,
@@ -858,7 +856,7 @@ var HI2Sequence = React.createClass({displayName: 'HI2Sequence',
     }
     
     return (
-      React.createElement("span", {onClick: this.props.isEdit?this._onClick:null, style: style}, 
+      React.createElement("span", {onClick: this.props.isEdit?this._onClick:null, style: style, contentEditable: "true"}, 
         React.createElement("span", {style: innerStyle}, 
           React.createElement("section", null, "1")
         )
@@ -887,7 +885,7 @@ var HI2Title = React.createClass({displayName: 'HI2Title',
     }
     
     return (
-      React.createElement("span", {onClick: this.props.isEdit?this._onClick:null, style: style}, 
+      React.createElement("span", {onClick: this.props.isEdit?this._onClick:null, style: style, contentEditable: "true"}, 
         this.props.options.title
       )
     )
@@ -1147,6 +1145,7 @@ module.exports = {
   BP1: BpItem1,
   C1: CardItem1
 };
+
 
 
 
